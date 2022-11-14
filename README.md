@@ -10,7 +10,8 @@
 | 18/0119818  |  Felipe Boccardi Silva Agustini |
 
 ## Sobre 
-O jogo de colorir da Barbe utiliza de uma fila que utiliza do algoritomo Breadth First Search para flood fill um desenho.
+O jogo de colorir da Barbe utiliza de uma fila que utiliza do algoritimo Breadth First Search para flood fill um desenho ou de uma pilha que utiliza do algoritimo Depth First Search para flood fill um desenho.
+
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
