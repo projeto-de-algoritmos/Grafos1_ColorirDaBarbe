@@ -2,20 +2,26 @@ from components.color_picker import ColorPicker
 from components.draw import Draw
 
 import pygame
+import os
+import random 
 
 pygame.init()
 
 screen = pygame.display.set_mode((500,500))
 pygame.display.set_caption(("Colorir da Barbie"))
 
+icon = pygame.image.load("public\\barbie-icon.png")
+pygame.display.set_icon(icon)
+
 clock = pygame.time.Clock()
 
 cp = ColorPicker(50, 50, 400, 60)
 
-draw = Draw(120, 50, cp)
+path="assets"
+files=os.listdir(path)
+file=random.choice(files)
 
-surf = draw.getSurface()
-screen.blit(surf, (120, 50))
+draw = Draw(100, 150, cp, image_path="assets\\" + file)
 
 run = True
 
@@ -26,9 +32,11 @@ while run:
             raise SystemExit
 
     cp.update()
+    draw.update()
 
     screen.fill("white")
     cp.draw(screen)
+    draw.draw(screen)
 
     pygame.display.flip()
      
