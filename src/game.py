@@ -1,5 +1,7 @@
+from components.button import Button
 from components.color_picker import ColorPicker
 from components.draw import Draw
+from components.label import Label
 
 import pygame
 import os
@@ -8,7 +10,7 @@ import random
 pygame.init()
 
 screen = pygame.display.set_mode((500,500))
-pygame.display.set_caption(("Colorir da Barbie"))
+pygame.display.set_caption(("Colorir da Barbe"))
 
 icon = pygame.image.load("public\\barbie-icon.png")
 pygame.display.set_icon(icon)
@@ -22,6 +24,8 @@ files=os.listdir(path)
 file=random.choice(files)
 
 draw = Draw(100, 150, cp, image_path="assets\\" + file)
+button = Button(450, 450, draw.graph)
+label = Label(80,450, draw.graph)
 
 run = True
 
@@ -33,10 +37,13 @@ while run:
 
     cp.update()
     draw.update()
+    button.update()
 
     screen.fill("white")
     cp.draw(screen)
     draw.draw(screen)
+    button.draw(screen)
+    label.draw(screen)
 
     pygame.display.flip()
      
