@@ -10,11 +10,21 @@
 | 18/0119818  |  Felipe Boccardi Silva Agustini |
 
 ## Sobre 
-O jogo de colorir da Barbie utiliza o algoritomo de flood fill para pintar um desenho.
+O jogo de colorir da Barbie utiliza de uma fila que utiliza do algoritomo Breadth First Search para flood fill um desenho.
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
+*Linguagem*: Python<br>
+*Framework*: (caso exista)<br>
+Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+
+## Testes 
+
+Para rodar os testes basta executar o comando a baixo.
+```
+$ python -m unittest .\tests\unit\test_graph.py
+```
 **Linguagem**: xxxxxx<br>
 **Framework**: (caso exista)<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
