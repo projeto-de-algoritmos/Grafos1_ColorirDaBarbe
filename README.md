@@ -1,4 +1,4 @@
-# Colorir da Barbie
+# Colorir da Barbe
 
 **Número da Lista**: 26<br>
 **Conteúdo da Disciplina**: Grafos 1<br>
@@ -10,7 +10,7 @@
 | 18/0119818  |  Felipe Boccardi Silva Agustini |
 
 ## Sobre 
-O jogo de colorir da Barbie utiliza de uma fila que utiliza do algoritomo Breadth First Search para flood fill um desenho.
+O jogo de colorir da Barbe utiliza de uma fila que utiliza do algoritomo Breadth First Search para flood fill um desenho.
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
@@ -44,12 +44,8 @@ python src/game.py
 
 Para rodar os testes basta executar o comando a baixo.
 ```
-python -m unittest .\tests\unit\test_graph.py
+python -m unittest tests/unit/test_graph.py
 ```
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Não somos vinculados a Barbie, é apenas um trabalho da faculdade
