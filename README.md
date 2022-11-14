@@ -37,14 +37,14 @@ pip install -r requirements.txt
 
 ### Após a instalação rode o jogo executando o comando
 ```
-python src/__init__.py
+python src/game.py
 ```
 
 ## Testes 
 
 Para rodar os testes basta executar o comando a baixo.
 ```
-$ python -m unittest .\tests\unit\test_graph.py
+python -m unittest .\tests\unit\test_graph.py
 ```
 
 ## Outros 
