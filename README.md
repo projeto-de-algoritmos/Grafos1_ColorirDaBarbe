@@ -16,8 +16,29 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
 *Linguagem*: Python<br>
-*Framework*: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+*Framework*: pygame<br>
+
+### Crie um ambiente em python 3
+```
+python3 -m venv env
+```
+
+### Ative o ambiente
+```
+source env/bin/activate
+```
+
+### Instale as dependencias
+```
+pip install -r requirements.txt
+```
+
+## Uso 
+
+### Após a instalação rode o jogo executando o comando
+```
+python src/__init__.py
+```
 
 ## Testes 
 
@@ -25,12 +46,6 @@ Para rodar os testes basta executar o comando a baixo.
 ```
 $ python -m unittest .\tests\unit\test_graph.py
 ```
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
