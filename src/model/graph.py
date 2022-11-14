@@ -17,8 +17,7 @@ class Graph:
         newColor is the new color
         """
         R, C, RGB = image.shape
-        color = np.copy(image[sr][sc]) 
-
+        color = np.copy(image[sr][sc])
         r, g, b, a = newColor
         newColor = [r, g, b]
           
@@ -33,6 +32,6 @@ class Graph:
             for dr, dc in ((1, 0), (0, 1), (-1, 0), (0, -1)):
                 nr = r + dr
                 nc = c + dc
-                if 0 <= nr < R and 0 <= nc < C and image[nr][nc].all() == color.all():
+                if 0 <= nr < R and 0 <= nc < C and np.array_equal(image[nr][nc], color):
                     Q.append((nr, nc))
         return image
