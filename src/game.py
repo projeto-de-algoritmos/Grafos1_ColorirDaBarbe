@@ -12,9 +12,6 @@ pygame.init()
 screen = pygame.display.set_mode((500,500))
 pygame.display.set_caption(("Colorir da Barbe"))
 
-icon = pygame.image.load("public\\barbie-icon.png")
-pygame.display.set_icon(icon)
-
 clock = pygame.time.Clock()
 
 cp = ColorPicker(50, 50, 400, 60)

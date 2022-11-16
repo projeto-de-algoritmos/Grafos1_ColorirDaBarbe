@@ -10,11 +10,15 @@
 | 18/0119818  |  Felipe Boccardi Silva Agustini |
 
 ## Sobre 
-O jogo de colorir da Barbe utiliza de uma fila que utiliza do algoritimo Breadth First Search para flood fill um desenho ou de uma pilha que utiliza do algoritimo Depth First Search para flood fill um desenho.
+
+O jogo seleciona uma imagem aleatoria dentro da pasta assets ao inicializar (as imagem devem conter o tamanho maximo de 300x300 pixels) E então pode-se colorir a imagem com a cor selecionada no colour picker utilizando o algoritimo Breadth First Search (BFS) ou  Depth First Search (DFS). para isso basta alternar entre os dois algoritmos clicando no botão no canto inferior direito.
+
+Após a execução do algoritmo é mostrado o tempo de execução para o preenchimento da area selecionada.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
-
+![imagem 1](/public/screenshot1.PNG)
+![imagem 2](/public/screenshot2.PNG)
+![imagem 3](/public/screenshot3.PNG)
 ## Instalação 
 *Linguagem*: Python<br>
 *Framework*: pygame<br>
@@ -49,4 +53,4 @@ python -m unittest tests/unit/test_graph.py
 ```
 
 ## Outros 
-Não somos vinculados a Barbie, é apenas um trabalho da faculdade
+Este trabalho tem como finalidade mostrar os conhecimentos da dupla no uso de algoritimos de busca em grafos e não possui fins comerciais. As imagens contidas neste repositório são uma parodia baseadas na logo da Barbie, e podem ser retirada caso solicitado. 
