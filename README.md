@@ -17,8 +17,13 @@ Após a execução do algoritmo é mostrado o tempo de execução para o preench
 
 ## Screenshots
 ![imagem 1](/public/screenshot1.PNG)
+
 ![imagem 2](/public/screenshot2.PNG)
+
 ![imagem 3](/public/screenshot3.PNG)
+
+## Video
+https://unbbr.sharepoint.com/sites/Gravaes348/_layouts/15/stream.aspx?id=%2Fsites%2FGravaes348%2FDocumentos%20Compartilhados%2FGeneral%2FRecordings%2FReuni%C3%A3o%20em%20%5FGeneral%5F%2D20221120%5F151438%2DGrava%C3%A7%C3%A3o%20de%20Reuni%C3%A3o%2Emp4&ga=1
 ## Instalação 
 *Linguagem*: Python<br>
 *Framework*: pygame<br>
