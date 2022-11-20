@@ -21,13 +21,15 @@ class GraphController:
     def getAlgorithm(self) -> str:
         return self.algorithm
     
-    def floodFill(self, image: List[List[List[int]]], sr: int, sc: int, newColor: RGBA) -> List[List[List[int]]]:
+    def floodFill(self, sr: int, sc: int, newColor: RGBA) -> None:
         """
         image is the graph
         (sr, sc) is the position of pixel
         newColor is the new color
         """
         if self.algorithm == 'bfs':
-            return self.graph.bfs(image, sr, sc, newColor)
+            self.graph.bfs(sr, sc, newColor)
         elif self.algorithm == 'dfs':
-            return self.graph.dfs(image, sr, sc, newColor)
+            self.graph.dfs(sr, sc, newColor)
+
+        return

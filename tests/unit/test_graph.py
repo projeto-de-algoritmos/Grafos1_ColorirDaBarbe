@@ -19,7 +19,8 @@ class TestFloodBFS(unittest.TestCase):
             [[1, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1]],  
             [[1, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1]],  
             [[1, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1]]])
-        actual = graph.floodFill(image, 0, 0, (1, 1, 1, 1))
+        graph.floodFill(0, 0, (1, 1, 1, 1))
+        actual = graph.graph.image
         self.assertEqual(np.array_equal(actual, expected), True)
 
     def test_limited_pixel(self):
@@ -34,7 +35,8 @@ class TestFloodBFS(unittest.TestCase):
             [[1, 1, 1], [1, 1, 1], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]])
-        actual = graph.floodFill(image, 0, 0, (1, 1, 1, 1))    
+        graph.floodFill(0, 0, (1, 1, 1, 1))
+        actual = graph.graph.image
         self.assertEqual(np.array_equal(actual, expected), True)
 
     def test_limited_pixel_open_border(self):
@@ -49,7 +51,8 @@ class TestFloodBFS(unittest.TestCase):
             [[1, 1, 1], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]])
-        actual = graph.floodFill(image, 0, 0, (1, 1, 1, 1))
+        graph.floodFill(0, 0, (1, 1, 1, 1))
+        actual = graph.graph.image
         self.assertEqual(np.array_equal(actual, expected), True)
 
     def test_multiple_colors(self):
@@ -64,7 +67,8 @@ class TestFloodBFS(unittest.TestCase):
             [[1, 1, 1], [1, 1, 1], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]])
-        actual = graph.floodFill(image, 1, 1, (1, 1, 1, 1))
+        graph.floodFill(1, 1, (1, 1, 1, 1))
+        actual = graph.graph.image
         self.assertEqual(np.array_equal(actual, expected), True)
 
 class TestFloodDFS(unittest.TestCase):
@@ -80,8 +84,8 @@ class TestFloodDFS(unittest.TestCase):
             [[1, 1, 1], [1, 1, 1], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]])
-        actual = graph.floodFill(image, 0, 0, (1, 1, 1, 1)) 
-        print(actual)
+        graph.floodFill(0, 0, (1, 1, 1, 1)) 
+        actual = graph.graph.image
         self.assertEqual(np.array_equal(actual, expected), True)
 
     def test_limited_pixel_open_border(self):
@@ -96,7 +100,8 @@ class TestFloodDFS(unittest.TestCase):
             [[1, 1, 1], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]])
-        actual = graph.floodFill(image, 0, 0, (1, 1, 1, 1))
+        graph.floodFill(0, 0, (1, 1, 1, 1))
+        actual = graph.graph.image
         self.assertEqual(np.array_equal(actual, expected), True)
 
     def test_multiple_colors(self):
@@ -111,7 +116,8 @@ class TestFloodDFS(unittest.TestCase):
             [[1, 1, 1], [1, 1, 1], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]], 
             [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]])
-        actual = graph.floodFill(image, 1, 1, (1, 1, 1, 1))
+        graph.floodFill(1, 1, (1, 1, 1, 1))
+        actual = graph.graph.image
         self.assertEqual(np.array_equal(actual, expected), True)
 
 if __name__ == '__main__':
